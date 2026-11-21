@@ -1,52 +1,51 @@
-LEAD CONVERSION PREDICTION USING MACHINE LEARNING
+# Lead Conversion Prediction Using Machine Learning
 
-OVERVIEW
+## Project Overview
 
-A machine learning classification pipeline built in Python to predict whether
-prospective sales leads will convert into paying customers. This system helps
-sales and marketing teams identify high-potential leads, prioritize follow-ups,
-and optimize campaign strategies.
- 
-DATASET
+This project uses machine learning to predict whether a prospective sales lead will **convert into a customer** based on historical lead attributes and interaction details.
 
-Table: Unified_Leads.csv
-Historical Lead Records | Binary Classification Target (Converted vs. Not Converted)
+## Objective
 
-Lead columns:        Name, contact_number, Contact_email (Anonymized PII)
-Source columns:      source_type, campaign_name, references
-Sales columns:       lead_stage, assigned_to
-Interaction columns: creation_date, first_call_attempt, last_call_date, last_call_time
+To build and compare machine learning classification models, identify the model with the best predictive performance, and help sales teams prioritize high-potential leads.
 
-Target Variable:     target (1 = CONVERTED, 0 = NOT CONVERTED)
+## Tools and Technologies
 
-PREPROCESSING & FEATURE ENGINEERING
+* Python
+* Pandas and NumPy
+* Matplotlib and Seaborn
+* Scikit-learn
+* Google Colab
 
-Data Cleaning        Removed anonymized PII columns and 100% null columns
-Missing Imputation   Median imputation for numerical features; constant 'missing'
-                     imputation for categorical variables
-Encoding             One-Hot Encoding handle_unknown='ignore' for categorical data
-Feature Scaling      Standardization StandardScaler applied to numerical attributes
-Date Extraction      Extracted creation_year, creation_month, creation_day,
-                     and creation_hour from creation_date
+## Dataset
 
-MODEL PIPELINE & ARCHITECTURE
+The project uses the **Unified Leads Dataset** (`Unified_Leads.csv`), containing real historical lead records across multiple marketing campaigns and sales stages (with personal identifiers anonymized for privacy).
 
-TRAIN-TEST SPLIT
-  - 80% Training set / 20% Testing set 
+## Project Workflow
 
-CLASSIFICATION MODELS EVALUATED
-  - Logistic Regression 
-  - Decision Tree Classifier
-  - Random Forest Classifier 
+1. Data loading and cleaning
+2. Exploratory data analysis (EDA)
+3. Data visualization
+4. Train-test split
+5. Model training using Logistic Regression, Decision Tree, and Random Forest
+6. Model evaluation and comparison
+7. Feature importance analysis and lead prioritization
 
-EVALUATION METRICS
-  - Accuracy, Precision, Recall, F1-Score, and ROC-AUC Score
+## Model Comparison
 
-PROJECT WORKFLOW STEPS
+| Model | Accuracy |
+| :--- | :--- |
+| Logistic Regression | 93.66% |
+| Decision Tree | 88.52% |
+| Random Forest | 91.75% |
 
-1. Data Preprocessing & Target Definition  
-2. Exploratory Data Analysis (EDA)  
-3. Model Development & Evaluation  
-4. Prediction & Lead Prioritization System
-   
+## Key Findings
 
+* **Logistic Regression** achieved the highest test accuracy of **93.66%**.
+* Feature importance analysis was performed to identify the top factors influencing lead conversion success.
+* The three models were compared to understand their classification performance and prioritize high-potential leads.
+
+## Conclusion
+
+This project provided practical experience in data cleaning, feature engineering, exploratory data analysis, visualization, machine learning classification, and model evaluation.
+
+**Note:** Personal identifiers (names, phone numbers, and email addresses) in the dataset have been anonymized to protect individual privacy.
