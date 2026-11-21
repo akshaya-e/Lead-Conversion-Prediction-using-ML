@@ -18,7 +18,7 @@ To build and compare machine learning classification models, identify the model 
 
 ## Dataset
 
-The project uses the **Unified Leads Dataset** (`Unified_Leads.csv`), containing real historical lead records across multiple marketing campaigns and sales stages (with personal identifiers anonymized for privacy).
+The project uses the **Unified Leads Dataset** (Unified_Leads.csv), containing real historical lead records across multiple marketing campaigns and sales stages (with personal identifiers anonymized for privacy).
 
 ## Project Workflow
 
@@ -48,4 +48,3 @@ The project uses the **Unified Leads Dataset** (`Unified_Leads.csv`), containing
 
 This project provided practical experience in data cleaning, feature engineering, exploratory data analysis, visualization, machine learning classification, and model evaluation.
 
-**Note:** Personal identifiers (names, phone numbers, and email addresses) in the dataset have been anonymized to protect individual privacy.
